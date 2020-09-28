@@ -1,0 +1,61 @@
+git ini
+git add .
+git status
+git -rm cached ---> Remueve del Staging el archivo. 
+git config --list --> Ver configuracion por defecto. 
+git config --list --show-origin ---> Muestra las rutas por defecto. 
+git config --global user.name "pablo.martinez"
+git config --global user.email "pablo.martinez@att.com"
+git show doc.txt ---> Muestra historico de cambios
+git checkout 2131jk76k8jh67kj .txt 
+git master
+git commit 
+git clone url---> trae del repositorio remoto al directorio de trabajo y al repositorio local
+git pull -->trae del repositorio remoto al directorio de trabajo
+git push--> envia del repositorio local al remoto
+git fetch--> trae del repositorioremoto al repositorio local
+git merge-->copia del repositorio local al directorio de trabajo
+git commit -am--> es el mismo git add + git commit (Solo finciona cuando ya se habia hecho un add)
+git branch nombrederama --> crea una nueva rama. 
+git checkout nombrederama--> moverse entre cabeceras
+git branch -->muestra las ramas
+git merge--> Fuciona las dos ramas (Prioridad desde la rama en que se haga el marge)
+git remote add origin https://github.com/xx-xx/yy-yy
+git remote
+git remote -v 
+git pull origin master
+git config -l ---> Muestra la configuracion
+git config --global user.email "asd@asd.com"
+git chechout -b nombrederama --> crear una rama y te pasa hacia ella.
+git rebase nombrederama --> Trae los cambios de la otra rama a la cual estas (es lo mismo que un merge pero con merge se elimina la rama origen).
+Formato Markdown
+gitk---> ver de forma grafica los cambios
+git clone git@github.com:pemsdev10/Platzi.git --> trae el proyecto de github al equipo
+--------------------------crear una llave ssh----------------
+ssh-keygen -t rsa -b 4096 -C "pablomartinezs10@hotmail.com" 
+eval $(ssh-agent)
+ssh-add ~/.ssh/id_rsa
+git remote -v
+git remote set-url origin git@github.com:pemsdev10/Platzi.git
+git pull
+git pull origin master
+git pull origin master
+git push origin master
+-----------------------------------------------------------------
+git log --all
+git log --all --graph
+git log --all --graph --decorate --oneline
+alias arbolito ="git log --all --graph --decorate --oneline"
+git tag 
+git show-ref --tag
+git push origin --tags
+git tag -d dormido ----> elimina un tag
+git push origin :refs/tags/dormido
+git show branch
+git show branch --all
+gitk --Ver de forma grafica los cambios. 
+git log --graph --> 
+-------------------------------------------------------
+Pull Request
+
+
