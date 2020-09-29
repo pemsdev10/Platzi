@@ -31,7 +31,7 @@ git rebase nombrederama --> Trae los cambios de la otra rama a la cual estas (es
 Formato Markdown
 gitk---> ver de forma grafica los cambios
 git clone git@github.com:pemsdev10/Platzi.git --> trae el proyecto de github al equipo
-git remote add upstream --> crear nueva rama para traer info de otro repositorio ajeno. 
+git remote add upstream https://repositorioajeno.git --> crear nueva rama para traer info de otro repositorio ajeno. 
 --------------------------crear una llave ssh----------------
 ssh-keygen -t rsa -b 4096 -C "pablomartinezs10@hotmail.com" 
 eval $(ssh-agent)
