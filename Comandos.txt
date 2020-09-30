@@ -7,7 +7,8 @@ git config --list --show-origin ---> Muestra las rutas por defecto.
 git config --global user.name "pablo.martinez"
 git config --global user.email "pablo.martinez@att.com"
 git show doc.txt ---> Muestra historico de cambios
-git checkout 2131jk76k8jh67kj .txt 
+git checkout 2131jk76k8jh67kj historia.txt --> volver a una version anterior 
+git checkout master historia.txt  --->
 git master
 git commit 
 git clone url---> trae del repositorio remoto al directorio de trabajo y al repositorio local
@@ -49,6 +50,17 @@ git commit --amend -->los cambios que hice los va a pegar al commit anterior y n
 			ejecutar el comando git add nombredelomidficado
 git reflog ---> muestra todos los logs que han sucedido en tu trabajo.
 git reset --hard qewq34 --> restaura hasta ese commit todos los cambios, borrando los commits que esten por delante de el.
+git grep palabraabuscar --> Se utiliza para buscar una palabra en todo el proyecto
+git grep -c palabraabuscar --> Muestra cuantas veces esta la palabra.
+git grep -n palabraabuscar --> Muestra exactamente el numero en la linea de codigo donde la use
+git log -S palabraabuscar --> busca la palabra en los commits 
+git shortlog -sn --all --no-merges ---> cambios realizados por las personas. (los que han hecho commits)
+git config --global alias.stast "git shortlog -sn --all --no-merges"
+git blame -c archivoquequieroverloscambios --> ver linea por linea que y quien hizo los cambios 
+git blame --help -->abre en el navegador como funciona blame
+git blame css/estilos.css -L35,53 -c --> buscar quien realizo cambios desde la linea 35 hasta la linea 53
+git branch -r --> ver ramas remotas en github 
+git branch -r --> ver ramas remotas y locales (Blanco locales, rojas remotas)
 --------------------------crear una llave ssh----------------
 ssh-keygen -t rsa -b 4096 -C "pablomartinezs10@hotmail.com" 
 eval $(ssh-agent)
@@ -60,6 +72,7 @@ git pull origin master
 git pull origin master
 git push origin master
 -----------------------------------------------------------------
+git log --stat --> ver los cambios especificos en los archivos en los commits
 git log --all
 git log --all --graph
 git log --all --graph --decorate --oneline
