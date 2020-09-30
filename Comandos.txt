@@ -8,7 +8,7 @@ git config --global user.name "pablo.martinez"
 git config --global user.email "pablo.martinez@att.com"
 git show doc.txt ---> Muestra historico de cambios
 git checkout 2131jk76k8jh67kj historia.txt --> volver a una version anterior 
-git checkout master historia.txt  --->
+git checkout master historia.txt  ---> mira el archivo en la rama master
 git master
 git commit 
 git clone url---> trae del repositorio remoto al directorio de trabajo y al repositorio local
