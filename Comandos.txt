@@ -42,6 +42,13 @@ git stash list --> Ver los que tengo en estado stash.
 git stash pop --> volver a los cambios que tenia sin hacer el commit. 
 git stash branch nombrederama --->
 git stash drop --->borra el stash guardado
+git clean --dry-run --> vista previa de lo que va a borrar
+git clean -f --> borra definitivamente los archivos q no esten add (No borra carpetas y archivos ignorados)
+git cherry-pick 11jk3j2(Es el hash del commit) --> Sirve para traer un commit viejo a la rama master. Es mala practica :(
+git commit --amend -->los cambios que hice los va a pegar al commit anterior y no creará uno nuevo, es necesario antes 
+			ejecutar el comando git add nombredelomidficado
+git reflog ---> muestra todos los logs que han sucedido en tu trabajo.
+git reset --hard qewq34 --> restaura hasta ese commit todos los cambios, borrando los commits que esten por delante de el.
 --------------------------crear una llave ssh----------------
 ssh-keygen -t rsa -b 4096 -C "pablomartinezs10@hotmail.com" 
 eval $(ssh-agent)
