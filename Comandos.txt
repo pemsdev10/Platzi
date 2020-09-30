@@ -32,7 +32,16 @@ Formato Markdown
 gitk---> ver de forma grafica los cambios
 git clone git@github.com:pemsdev10/Platzi.git --> trae el proyecto de github al equipo
 git remote add upstream https://repositorioajeno.git --> crear nueva rama para traer info de otro repositorio ajeno. 
-git rebase --> agarra la rama entera y la pega a la otra, es una mala practica. re-escribe la historia. 
+git rebase --> agarra la rama entera y la pega a la otra, es una mala practica. re-escribe la historia.
+		Rebase se hace primero a la que cambia y luego a la final. En el ejemplo primero desde experimento a la master
+		y luego desde la master a experimento.
+git branch -D nombrederama-->Borrar rama 
+git stash --> Cuando quiero guardar pero sin hacer commit y te devuelve al commit anterior. (para ver lo del stash nuevament
+		toca git stash pop)
+git stash list --> Ver los que tengo en estado stash.
+git stash pop --> volver a los cambios que tenia sin hacer el commit. 
+git stash branch nombrederama --->
+git stash drop --->borra el stash guardado
 --------------------------crear una llave ssh----------------
 ssh-keygen -t rsa -b 4096 -C "pablomartinezs10@hotmail.com" 
 eval $(ssh-agent)
